@@ -1,4 +1,5 @@
 
+import { Footer } from '@/components/footer/footer';
 import { NavBar } from '@/components/navbar/navbar';
 import React from 'react';
 
@@ -12,9 +13,7 @@ export const PageTemplate =
       <div className="template-container">
         <NavBar />
         <main>{children}</main>
-        <footer>
-          <p>My Website Footer</p>
-        </footer>
+        <Footer />
       </div>
     );
   };

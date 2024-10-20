@@ -2,17 +2,15 @@ import { NavigationMenuList } from '@radix-ui/react-navigation-menu';
 import React from 'react';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, navigationMenuTriggerStyle } from '../ui/navigation-menu';
 import Link from 'next/link';
+import { Logo } from '../logo/logo';
 
 
 
 export const NavBar = () => {
     return (
         <NavigationMenu orientation='horizontal' className='flex-none justify-between w-full max-w-none py-4'>
-            <article className='flex flex-col leading-3'>
-                <p className='text-red-700'>All things</p>
-                <h2 className='text-2xl font-bold'>Horror</h2>
-            </article>
-            <NavigationMenuList className='flex gap-8' defaultValue={'HOME'}>
+            <Logo />
+            <NavigationMenuList className='flex gap-10 font-argentum' defaultValue={'HOME'}>
                 <NavigationMenuItem>
                     <Link href="/" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -36,10 +34,10 @@ export const NavBar = () => {
                 </NavigationMenuItem>
             </NavigationMenuList>
             <NavigationMenuList >
-                <NavigationMenuItem>
+                <NavigationMenuItem className='font-bloody text-2xl'>
                     <Link href="/about" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                            PURO SANGRE
+                            PURA SANGRE
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
