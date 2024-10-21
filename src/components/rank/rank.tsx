@@ -25,7 +25,7 @@ export const Rank = () => {
     return (
         <div className="flex flex-col lg:flex-row w-full">
 
-            <Carousel className="w-full  overflow-x-auto">
+            {/* <Carousel className="w-full  overflow-x-auto">
                 <CarouselContent className="flex gap-4">
                     {mockMovies.map((movie: Movie, index: number) => (
                         <CarouselItem
@@ -59,7 +59,7 @@ export const Rank = () => {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-            </Carousel>
+            </Carousel> */}
 
 
         </div>
