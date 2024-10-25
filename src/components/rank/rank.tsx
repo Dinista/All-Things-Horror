@@ -6,13 +6,13 @@ import { Movie } from "@/types/api/types";
 import Image from 'next/image';
 
 export const Rank = () => {
-    // State to store the selected movie
+
     const [selectedMovie, setSelectedMovie] = useState<Movie | null>(null);
 
-    // Refs for each carousel item to allow scrolling
+
     const movieRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-    // Handle selecting a movie and scroll to the selected movie
+
     const handleSelectMovie = (movie: Movie, index: number) => {
         setSelectedMovie(movie);
         // Scroll the selected movie into view
@@ -23,7 +23,24 @@ export const Rank = () => {
     };
 
     return (
-        <div className="flex flex-col lg:flex-row w-full">
+        <div className="flex flex-col lg:flex-row w-full items-start">
+            <div className="flex gap-5 overflow-x-auto basis-1/3">
+
+                {mockMovies.map((movie: Movie, index: number) => (
+                    <div className='flex items-end h-full w-full'>
+                        <Image
+                            className="border-8"
+                            src={movie.posterUrl}
+                            alt={`${movie.title} poster`}
+                            width={390}
+                            height={550}
+                        />
+
+
+                    </div>
+                ))}
+
+            </div>
 
             {/* <Carousel className="w-full  overflow-x-auto">
                 <CarouselContent className="flex gap-4">
@@ -62,6 +79,6 @@ export const Rank = () => {
             </Carousel> */}
 
 
-        </div>
+        </div >
     );
 };
