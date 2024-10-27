@@ -17,23 +17,25 @@ export const Rank = () => {
     };
 
 
-
-
     return (
         <div>
 
-            <h1 className='text-xl font-argentum font-semibold  mb-6'>BEST MOVIES OF THIS MONTH</h1>
+            <h1 className='text-2xl font-argentum font-semibold  mb-6'>BEST MOVIES OF THIS MONTH</h1>
 
             <Carousel className="w-full overflow-x-auto" title="Rank" setApi={setApi}
                 opts={{
                     align: "start",
+                    loop: true,
+                    dragFree: true,
+                    watchDrag: false,
+
                 }}
             >
                 <CarouselContent className="flex gap-4" >
                     {mockMovies.map((movie: Movie, index: number) => (
                         <CarouselItem
                             key={movie.id}
-                            className="transition-transform duration-300 cursor-pointer"
+                            className="cursor-pointer"
                             onClick={() => handleSelectMovie(movie, index)}
                         >
 
