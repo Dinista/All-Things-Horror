@@ -23,7 +23,8 @@ const config: Config = {
 			fontFamily: {
 				genera: 'var(--font-genera-sans)',
 				argentum: 'var(--font-argentum-sans)',
-				bloody: 'var(--font-bloody-sans)'
+				bloody: 'var(--font-bloody-sans)',
+				neoplanta: 'var(--font-neoplanta-sans)'
 			}
 		}
 	},

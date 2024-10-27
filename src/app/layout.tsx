@@ -31,11 +31,20 @@ const bloody = localFont({
   weight: '500'
 })
 
+const neoplanta = localFont({
+  src: "../../public/fonts/Bloody.otf",
+  variable: "--font-bloody-sans",
+  weight: '500'
+})
+
+
 
 export const metadata: Metadata = {
   title: "All Things Horror",
   description: "All things horror - Keep it dark",
 };
+
+
 
 export default function RootLayout({
   children,
@@ -45,7 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${argentum.variable} ${genera.variable} ${bloody.variable} antialiased`}
+        className={`${argentum.variable} ${genera.variable} ${bloody.variable} ${neoplanta.variable} antialiased`}
       >
         {children}
       </body>
