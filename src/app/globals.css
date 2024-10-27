@@ -29,6 +29,7 @@ body {
   display: flex;
   margin-right: 5%;
   margin-left: 5%;
+  gap: 1.5rem;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;

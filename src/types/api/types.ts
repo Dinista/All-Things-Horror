@@ -5,6 +5,7 @@ export interface Movie {
     releaseYear: number;
     genre: string;
     posterUrl: string;
+    synopsis: string;
 }
 
 export interface ApiResponse<T> {

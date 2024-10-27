@@ -32,9 +32,9 @@ const bloody = localFont({
 })
 
 const neoplanta = localFont({
-  src: "../../public/fonts/Bloody.otf",
-  variable: "--font-bloody-sans",
-  weight: '500'
+  src: "../../public/fonts/NeoplantaBold.otf",
+  variable: "--font-neoplanta-sans",
+  weight: '800'
 })
 
 
