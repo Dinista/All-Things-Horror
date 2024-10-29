@@ -27,7 +27,7 @@ export const Rank = () => {
                     align: "start",
                     loop: true,
                     dragFree: true,
-                    watchDrag: false,
+
 
                 }}
             >
@@ -51,12 +51,15 @@ export const Rank = () => {
                                     {selectedMovie?.id === movie.id && (
                                         <div className="p-4 text-white rounded-md shadow-lg ml-96 w-full font-argentum flex flex-col gap-2">
                                             <p className='font-bold text-defaultRed'>{(index + 1)}ª SCARIEST MOVIE THIS MONTH</p>
-                                            <h2 className="text-5xl font-bold mb-4 font-neoplanta">{selectedMovie.title.toUpperCase()}</h2>
+                                            <h2 className="text-5xl font-bold mb-4 font-neoplanta flex gap-3">
+                                                {selectedMovie.title.toUpperCase()}
+                                                <p className="text-sm text-gray-500 font-argentum self-end">{selectedMovie.releaseYear}</p>
+                                            </h2>
                                             <p className="text-lg font-extrabold text-defaultRed">{selectedMovie.genre}</p>
                                             <p className="text-lg mt-2">{selectedMovie.synopsis}</p>
                                             <div className="flex justify-between text-gray-500">
-                                                <p className="text-md mt-2">Directed by: {selectedMovie.director}</p>
-                                                <p className="text-sm mt-2">Released: {selectedMovie.releaseYear}</p>
+                                                <p className="text-md">Directed by: {selectedMovie.director}</p>
+
                                             </div>
                                         </div>
                                     )}

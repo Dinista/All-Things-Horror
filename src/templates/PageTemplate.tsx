@@ -12,7 +12,7 @@ export const PageTemplate =
     return (
       <div className="template-container">
         <NavBar />
-        <main className='flex flex-col gap-6'>{children}</main>
+        <main className='flex flex-col gap-4'>{children}</main>
         <Footer />
       </div>
     );

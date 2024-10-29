@@ -1,11 +1,13 @@
+import { LastReview } from "@/components/lastReview/lastReview";
 import { Rank } from "@/components/rank/rank";
 import { PageTemplate } from "@/templates/PageTemplate";
-import Image from "next/image";
+
 
 export default function Home() {
   return (
     <PageTemplate>
-      <Rank></Rank>
+      <Rank />
+      <LastReview />
     </PageTemplate>
   );
 }
