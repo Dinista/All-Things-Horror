@@ -1,1 +1,3 @@
-## EMBRACE THE HORROR FOREVER
+### All Things Horror
+
+__Embrace the horror__
