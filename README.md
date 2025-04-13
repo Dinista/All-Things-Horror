@@ -16,4 +16,19 @@ At the heart of the platform is a Large Language Model (LLM), trained and fine-t
 #### Movie Metadata with TMDB
 We leverage the TMDB API to fetch rich movie data: Posters, crew, release dates, runtime and genres.
 
+## How to use
+
+```
+docker-compose up -d
+```
+
+### Technologies && Dependencies
+
+### 💀 Why Horror?
+Horror is more than jump scares — it's a reflection of our fears, our society, and our subconscious. This blog is a love letter to the genre. Whether you're into supernatural thrillers, psychological horror, or slashers, you’ll feel right at home here.
+
+### 🩸 Get Involved
+Have a horror movie recommendation? Want to contribute feature ideas or design themes? Open an issue or drop a suggestion — we’d love to grow the haunted house with your help.
+
+_Based on the design by <a href='https://dribbble.com/shots/20305908-Horror-things-Platform-Streaming-Horror-Movie'>R Ghozia U</a>_ <br/>
 _**Embrace the horror**_
