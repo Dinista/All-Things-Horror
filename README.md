@@ -9,6 +9,7 @@ This site is dedicated solely to horror movies, blending cutting-edge technology
 <p align="center">
   <img width="480" height="543" src="https://github.com/Dinista/All-Things-Horror/blob/main/public/readme/screenshot.png?raw=true" />
 </p>
+
 ### 🧠 Integration with LLM model
 At the heart of the platform is a Large Language Model (LLM), trained and fine-tuned to generate detailed, high-quality reviews based on plot, cast, themes, and user sentiment. As soon as a new horror movie is released and added to our database, the AI generates a fresh review — instantly.
 
