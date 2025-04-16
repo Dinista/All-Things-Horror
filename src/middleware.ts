@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-// Define rotas públicas que não exigem autenticação
 const PUBLIC_FILE = /\.(.*)$/;
 
 export function middleware(req: NextRequest) {
@@ -22,10 +21,10 @@ export function middleware(req: NextRequest) {
 
   // Verifica autenticação (exemplo com token de sessão)
   const token = req.cookies.get('token');
-  
+
   // Se o token não existe e o usuário não está em uma rota pública, redireciona para a página de login
   if (!token) {
-    
+
     return NextResponse.next();
   }
 
