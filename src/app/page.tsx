@@ -1,3 +1,4 @@
+import Contact from "@/components/contact/contact";
 import { LastReview } from "@/components/lastReview/lastReview";
 import { Menu } from "@/components/menu/itemsMenu";
 import { Rank } from "@/components/rank/rank";
@@ -10,6 +11,7 @@ export default function Home() {
       <Rank />
       <LastReview />
       <Menu />
+      <Contact />
     </PageTemplate>
   );
 }

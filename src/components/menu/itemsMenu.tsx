@@ -36,7 +36,7 @@ export const Menu = () => {
 
     return (
         <div className="w-full flex-col gap-4 font-neoplanta uppercase font-light text-2xl">
-            <h1 className="font-genera text-defaultRed mt-3 mb-3 text-3xl">HORROR GENRE</h1>
+            <h1 className="font-genera text-defaultRed mt-5 mb-5 text-3xl">HORROR GENRE</h1>
             {items.map((item, index) => (
                 <Item key={index} link="#">
                     <p>{item.genero}</p>
