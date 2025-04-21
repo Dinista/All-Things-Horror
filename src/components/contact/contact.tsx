@@ -15,7 +15,7 @@ export default function Contact() {
                 <Link href={''} className='flex justify-center gap-4 w-full px-4 py-3 border border-gray-500/15 hover:bg-white/5'>
                     <Dribbble size={20} />
                     <p>
-                        Check out the code in Github
+                        Follow the design that it was based
                     </p>
                 </Link>
                 <Link href={''} className='flex justify-center gap-4 w-full px-4 py-3 border border-gray-500/15 hover:bg-white/5'>
