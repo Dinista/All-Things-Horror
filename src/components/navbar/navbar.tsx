@@ -19,7 +19,7 @@ export const NavBar = () => {
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/playlist" legacyBehavior passHref>
+                    <Link href="/list" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                             MOVIE LIST
                         </NavigationMenuLink>

@@ -12,15 +12,15 @@ export default function Contact() {
                 <p className='font-argentum'>Check out the code in Github Check out the code in Github</p>
             </div>
             <div className='flex flex-col uppercase items-center text-center font-[600] w-[500px] gap-4 mt-8'>
-                <Link href={''} className='flex justify-center gap-4 w-full px-4 py-3 border border-gray-500/15 hover:bg-white/5'>
+                <Link href={''} className='flex items-center justify-center gap-4 w-full px-4 py-3 border border-gray-500/15 hover:bg-white/5'>
                     <Dribbble size={20} />
-                    <p>
+                    <p className='flex items-center justify-center'>
                         Follow the design that it was based
                     </p>
                 </Link>
-                <Link href={''} className='flex justify-center gap-4 w-full px-4 py-3 border border-gray-500/15 hover:bg-white/5'>
+                <Link href={''} className='flex items-center justify-center gap-4 w-full px-4 py-3 border border-gray-500/15 hover:bg-white/5'>
                     <Github size={20} />
-                    <p>
+                    <p className='flex items-center justify-center'>
                         Check out the code in Github
                     </p>
                 </Link>
