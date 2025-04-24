@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from "react";
 
 const filtros = [
@@ -9,7 +11,7 @@ const filtros = [
     "Vampire",
 ];
 
-export default function FiltroMenu({
+export function ListMenu({
     onFiltroSelecionado,
 }: {
     onFiltroSelecionado?: (filtro: string) => void;
