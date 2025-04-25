@@ -24,15 +24,15 @@ export function ListMenu({
     };
 
     return (
-        <div className="flex gap-2 flex-wrap">
+        <div className="flex gap-2 flex-wrap font-argentum font-[500] text-sm">
             {filtros.map((filtro) => {
                 const isAtivo = filtro === filtroSelecionado;
                 return (
                     <button
                         key={filtro}
                         onClick={() => handleFiltroClick(filtro)}
-                        className={`border border-red-500 px-4 py-1 rounded-full transition-colors duration-200
-              ${isAtivo ? "bg-red-500 text-white" : "text-red-500 hover:bg-red-100"}`}
+                        className={`border-2 border-white/10 px-4 py-1 rounded-md transition-colors duration-200
+              ${isAtivo ? "bg-defaultRed text-white font-[600] border-white/5" : "text-white/45 hover:bg-white/15"}`}
                     >
                         {filtro}
                     </button>
