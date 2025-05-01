@@ -19,7 +19,7 @@ export function ReviewCard({
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
-            <div className="absolute inset-0 transition-opacity duration-700 ease-in-out bg-gradient-to-t from-black/95 to-transparent opacity-0 group-hover:opacity-100 pointer-events-none" />
+            <div className="z-10 absolute inset-0 transition-opacity duration-700 ease-in-out bg-gradient-to-t from-black/90 to-transparent opacity-0 group-hover:opacity-100 pointer-events-none" />
 
             <div className="relative w-full h-full">
                 <Image
@@ -33,11 +33,13 @@ export function ReviewCard({
             </div>
             <div />
             <div
-                className={`absolute bottom-0 left-0 right-0 p-3 text-white transition-transform duration-700 ${isHovered ? 'translate-y-0' : 'translate-y-full'}`}>
+                className={`z-20 absolute bottom-0 left-0 right-0 p-3 text-white transition-transform duration-700 ${isHovered ? 'translate-y-0' : 'translate-y-full'
+                    }`}
+            >
                 <h3 className="text-lg font-bold mb-1">
                     {title}
                 </h3>
-                <p className="text-sm text-gray-200 line-clamp-3 overflow-hidden text-ellipsis">
+                <p className="text-sm text-white line-clamp-3 overflow-hidden text-ellipsis opacity-100">
                     {description}
                 </p>
             </div>
