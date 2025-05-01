@@ -10,7 +10,7 @@ export default function page() {
         <h1 className='uppercase text-2xl font-genera text-defaultRed'>
           Review List
         </h1>
-        <section className='flex flex-col gap-2 mt-6'>
+        <section className='flex flex-col gap-10 mt-6'>
           <ListMenu />
           <ReviewCard />
         </section>

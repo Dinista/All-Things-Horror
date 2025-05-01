@@ -32,7 +32,7 @@ export function ListMenu({
                         key={filtro}
                         onClick={() => handleFiltroClick(filtro)}
                         className={`border-2 border-white/10 px-4 py-1 rounded-md transition-colors duration-200
-              ${isAtivo ? "bg-defaultRed text-white font-[600] border-white/5" : "text-white/45 hover:bg-white/15"}`}
+                        ${isAtivo ? "bg-defaultRed text-white font-[600] border-white/5" : "text-white/45 hover:bg-white/15"}`}
                     >
                         {filtro}
                     </button>
