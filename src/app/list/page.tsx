@@ -14,7 +14,7 @@ export default function page() {
           </h1>
           <ListMenu />
         </nav>
-        <section className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-6">
+        <section className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-y-6 gap-9">
           {mockMovies.map((movie, index) => (
             <ReviewCard
               key={movie.id || index}
