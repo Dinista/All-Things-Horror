@@ -1,0 +1,35 @@
+version: "3.8"
+
+services:
+  nextjs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    environment:
+      - NODE_ENV=development
+    command: npm run dev
+    restart: unless-stopped
+    # Uncomment these in future
+    # depends_on:
+    #   - db
+
+  # Uncomment if you need a database
+  # db:
+  #   image: postgres:14-alpine
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data
+  #   environment:
+  #     - POSTGRES_PASSWORD=postgres
+  #     - POSTGRES_USER=postgres
+  #     - POSTGRES_DB=nextjs
+  #   ports:
+  #     - "5432:5432"
+# Uncomment if you added the database service
+# volumes:
+#   postgres_data:
