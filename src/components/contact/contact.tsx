@@ -7,7 +7,7 @@ export default function Contact() {
     <section className="w-full flex justify-center items-center flex-col gap-6 mt-32 mb-32">
       <div className="flex flex-col gap-4 justify-center items-center">
         <h1 className="font-genera text-defaultRed uppercase text-2xl">
-          How it's done!
+          How it&apos;s done!
         </h1>
         <h2 className="uppercase font-neoplanta text-7xl">Follow closely</h2>
         <p className="font-argentum">
