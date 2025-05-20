@@ -8,6 +8,7 @@ This site is dedicated solely to horror movies, blending cutting-edge technology
 
 <p align="center">
   <img width="480" height="543" src="https://github.com/Dinista/All-Things-Horror/blob/main/public/readme/screenshot.png?raw=true" />
+  <img width="480" height="543" src="https://github.com/Dinista/All-Things-Horror/blob/main/public/readme/screenshot-1.png?raw=true" />
 </p>
 
 ### 🧠 Integration with LLM model
