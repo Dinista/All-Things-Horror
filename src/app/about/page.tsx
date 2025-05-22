@@ -26,7 +26,9 @@ export default function page() {
               quisquam, similique debitis? Veniam eos voluptate sequi doloremque
               numquam est tenetur consequatur!
             </p>
-            <p>Thank You! You&apos;re the responsable for this project</p>
+            <p className="font-genera font-extrabold text-defaultRed">
+              Thank You! You&apos;re the responsable for this project
+            </p>
           </div>
         </section>
       </div>
