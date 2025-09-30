@@ -9,7 +9,10 @@ import React from 'react';
 export const Rank = () => {
     const [selectedMovie, setSelectedMovie] = useState<Movie | null>(mockMovies[0]);
     const movieRefs = useRef<(HTMLDivElement | null)[]>([]);
-    const [api, setApi] = React.useState<CarouselApi>()
+    const [api, setApi] = React.useState<CarouselApi>();
+
+    const [isLoadingImage, setIsLoadingImage] = useState<boolean>(true);
+
 
     const handleSelectMovie = (movie: Movie, index: number) => {
         setSelectedMovie(movie);
@@ -27,11 +30,9 @@ export const Rank = () => {
                     align: "start",
                     loop: true,
                     dragFree: true,
-
-
                 }}
             >
-                <CarouselContent className="flex gap-4" >
+                <CarouselContent className="flex gap-4">
                     {mockMovies.map((movie: Movie, index: number) => (
                         <CarouselItem
                             key={movie.id}
@@ -39,13 +40,14 @@ export const Rank = () => {
                             onClick={() => handleSelectMovie(movie, index)}
                         >
 
-                            <div className="flex items-end relative">
+                            <div className={`flex items-end relative ${isLoadingImage ? 'saturate-0 blur-sm' : ''}`}>
                                 <Image
-                                    className="border-8"
+                                    className={`border-8`}
                                     src={movie.posterUrl}
+                                    onLoad={(_) => setIsLoadingImage(false)}
                                     alt={`${movie.title} poster`}
                                     width={selectedMovie?.id === movie.id ? 400 : 150}
-                                    height={550}
+                                    height={isLoadingImage && selectedMovie?.id != movie.id ? 225 : 595}
                                 />
                                 <div className="mt-4 lg:mt-0 lg:ml-8 flex flex-col justify-center absolute">
                                     {selectedMovie?.id === movie.id && (
