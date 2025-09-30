@@ -16,7 +16,7 @@ export default function NotFound() {
         href={"/"}
         className="mt-8 border-2 border-white/10 px-4 py-1 rounded-md hover:bg-red-600"
       >
-        Volte a home
+        Back to Home
       </Link>
     </div>
   );

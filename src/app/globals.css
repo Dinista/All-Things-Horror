@@ -24,8 +24,8 @@ body {
 
 .template-container {
   display: flex;
-  margin-right: 5%;
-  margin-left: 5%;
+  margin-right: 3%;
+  margin-left: 3%;
   gap: 1.5rem;
   flex-direction: column;
   justify-content: space-between;

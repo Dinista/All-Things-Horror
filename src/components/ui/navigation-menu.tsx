@@ -41,7 +41,7 @@ NavigationMenuList.displayName = NavigationMenuPrimitive.List.displayName
 const NavigationMenuItem = NavigationMenuPrimitive.Item
 
 const navigationMenuTriggerStyle = cva(
-  "hover:text-defaultRed font-normal focus:font-bold focus:text-defaultRed"
+  "hover:text-defaultRed  focus:text-defaultRed"
 )
 
 const NavigationMenuTrigger = React.forwardRef<
