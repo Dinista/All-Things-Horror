@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { Eye, EyeOff, Shield, Lock, Mail, AlertCircle } from "lucide-react";
+import { Eye, EyeOff, DoorOpen, Lock, Mail, AlertCircle } from "lucide-react";
 
 interface LoginForm {
   email: string;
@@ -38,22 +38,22 @@ export default function AdminLoginPanel() {
   const watchedFields = watch();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br  via-gray-800 to-black flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br  via-gray-800 to-red flex items-center justify-center p-4">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(199,50,40,0.1),transparent_50%)] pointer-events-none" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_60%,rgba(59,130,246,0.1),transparent_50%)] pointer-events-none" />
 
       <div className="w-full max-w-md relative">
         <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-8 shadow-2xl">
           <div className="text-center mb-8">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-red-500 to-blue-600 rounded-xl mb-4 shadow-lg">
-              <Shield className="w-8 h-8 text-white" />
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-red-500 to-red-800 rounded-xl mb-4 shadow-lg">
+              <DoorOpen className="w-8 h-8 text-white" />
             </div>
             <h1 className="text-2xl font-bold text-white font-genera mb-2">
-              Welcome Admin, The Portal of Enbed Souls awaits you... and once
-              you enter, there is no return
+              Welcome Admin
             </h1>
-            <p className="text-gray-300 text-sm font-argentum">
-              Sign in to access your dashboard
+            <p className="text-gray-300 text-sm font-argentum text-balance">
+              The Portal of Enbed Souls awaits you...
+              and once you enter, there is no return.
             </p>
           </div>
 
@@ -61,7 +61,7 @@ export default function AdminLoginPanel() {
             <div className="space-y-2">
               <label
                 htmlFor="email"
-                className="block text-sm font-medium text-gray-200 font-neoplanta"
+                className="block text-sm font-semibold text-gray-200 font-argentum"
               >
                 Email Address
               </label>
@@ -98,7 +98,7 @@ export default function AdminLoginPanel() {
             <div className="space-y-2">
               <label
                 htmlFor="password"
-                className="block text-sm font-medium text-gray-200 font-neoplanta"
+                className="block text-sm font-semibold text-gray-200 font-argentum"
               >
                 Password
               </label>
