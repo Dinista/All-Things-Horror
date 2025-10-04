@@ -52,7 +52,7 @@ export default function AdminLoginPanel() {
               Welcome Admin
             </h1>
             <p className="text-gray-300 text-sm font-argentum text-balance">
-              The Portal of Enbed Souls awaits you...
+              The portal of enbed souls awaits you...
               and once you enter, there is no return.
             </p>
           </div>
